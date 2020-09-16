@@ -19,8 +19,9 @@ pipeline {
                 params.keySet().each {
                     echo "The value of the ${it} parameter is: ${params[it]}"
                 }
+                echo "++++++++++++++++++"
                 for (element in params) {
-                    echo "${element.key} ${element.value}"
+                    echo "BLA BLA ${element.key} ${element.value}"
                 }
                 echo "HOST is ${params.HOST}"
                 }
