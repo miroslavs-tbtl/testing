@@ -8,12 +8,11 @@ pipeline {
 
         stage('Test Deploy') {
             steps {
+                echo 'Sending Slack notification...'
             for (entry in params) {
-              echo ${params.HOST}
+              echo '${params.HOST}'
              }
                 }
-            }
-            post {
             }
         }
     }
