@@ -15,8 +15,10 @@ pipeline {
                     // testing:
                 //    echo "${element.key} ${element.value}"
                 //}
+                script {
                 params.keySet().each {
                     echo "The value of the ${it} parameter is: ${params[it]}"
+                }
                 echo "HOST is ${params.HOST}"
                 }
                 }
