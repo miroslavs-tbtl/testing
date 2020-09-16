@@ -1,6 +1,4 @@
-for (entry in params) {
-     echo '${params.SERVS}'
-}
+echo '${params.HOST}'
 
 pipeline {
     agent any
