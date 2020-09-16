@@ -11,6 +11,10 @@ pipeline {
         stage('Test Deploy') {
             steps {
                 echo 'Sending Slack notification...'
+                for (element in params) {
+                    // testing:
+                    echo "${element.key} ${element.value}"
+                }
                 echo "HOST is ${params.HOST}"
                 }
             }
