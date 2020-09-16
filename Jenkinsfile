@@ -1,5 +1,5 @@
 for (entry in params) {
-     echo '${params.HOST}'
+     echo '${params.SERVS}'
 }
 
 pipeline {
