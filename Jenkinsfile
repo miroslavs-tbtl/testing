@@ -1,3 +1,7 @@
+for (entry in params) {
+     echo '${params.HOST}'
+}
+
 pipeline {
     agent any
     environment {
@@ -9,9 +13,6 @@ pipeline {
         stage('Test Deploy') {
             steps {
                 echo 'Sending Slack notification...'
-            for (entry in params) {
-              echo '${params.HOST}'
-             }
                 }
             }
         }
