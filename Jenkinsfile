@@ -19,6 +19,7 @@ pipeline {
                     echo "The value of the ${it} parameter is: ${params[it]}"
                 echo "HOST is ${params.HOST}"
                 }
+                }
             }
         }
     }
