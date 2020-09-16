@@ -11,6 +11,7 @@ pipeline {
         stage('Test Deploy') {
             steps {
                 echo 'Sending Slack notification...'
+                sh "HOST is ${params.HOST}"
                 }
             }
         }
