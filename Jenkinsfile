@@ -25,7 +25,7 @@ pipeline {
                     echo "BLA BLA ${element.key} ${element.value}"
                 }
                 echo "HOST is ${params.HOST}"
-                echo "*${JOB_NAME}* pipeline initiated... |${env.GIT_COMMIT.take(7)}>\nCommit Message: ${commit_message}\nAuthor: ${commiter}\nBuild URL: ${env.BUILD_URL}console"
+                echo "*${JOB_NAME}* pipeline initiated... |${env.GIT_COMMIT.take(7)}\nCommit Message: ${commit_message}\nAuthor: ${commiter}\nBuild URL: ${env.BUILD_URL}console"
                 }
                 }
             }
